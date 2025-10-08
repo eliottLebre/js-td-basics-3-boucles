@@ -25,3 +25,13 @@
     - que se passe-t-il si vous avez déclaré i avec let ?
     - que se passe-t-il si vous déclarez i avec var ?
 */
+const inputUser = parseInt(prompt("votre table de multiplication"));
+
+if (isNaN(inputUser)) {
+    console.log("Pas un nombre");
+} else {
+    console.log(`Voici les 10 premières valeurs de la table de multiplication par ${inputUser}`);
+    for (let i = 1; i < 10; i++){
+
+    }
+}
