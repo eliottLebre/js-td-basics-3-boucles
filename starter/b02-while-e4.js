@@ -20,3 +20,15 @@ Pour chaque itération, assurez-vous de vous arrêter après avoir affiché les 
 */
 
 
+const inputUser = parseInt(prompt("votre table de multiplication"));
+let i = 1;
+
+if (isNaN(inputUser)) {
+    console.log("Pas un nombre");
+} else {
+    console.log(`Voici les 10 premières valeurs de la table de multiplication par ${inputUser}`);
+    while (i <= 10){
+        console.log(inputUser * i);
+        i++
+    }
+}

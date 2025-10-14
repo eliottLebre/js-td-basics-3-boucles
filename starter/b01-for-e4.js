@@ -31,7 +31,7 @@ if (isNaN(inputUser)) {
     console.log("Pas un nombre");
 } else {
     console.log(`Voici les 10 premières valeurs de la table de multiplication par ${inputUser}`);
-    for (let i = 1; i < 10; i++){
-
+    for (let i = 1; i <= 10; i++){
+        console.log(inputUser * i);
     }
 }

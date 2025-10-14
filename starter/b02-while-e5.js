@@ -25,9 +25,14 @@ BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
 
+let inputUser = null;
+let charUser = "";
 
-
-
+do {
+    inputUser = prompt("Tapez une lettre ou X pour sortir : ");
+    charUser += inputUser;
+}while (inputUser !== "X")
+console.log(charUser);
 
 // code avec le bonus
 
