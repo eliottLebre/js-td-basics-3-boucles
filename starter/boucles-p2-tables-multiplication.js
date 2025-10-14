@@ -15,3 +15,16 @@ Affichez les x premières valeurs des n premières tables de multiplication :
 */
 // Commencez par demander à l'utilisateur jusqu'à quelle table de multiplication il souhaite aller et combien de valeurs il souhaite afficher pour chaque table.
 // Ensuite, utilisez une ou plusieurs boucles pour calculer et afficher les x premières valeurs des n premières tables de multiplication.
+const inputUser = parseInt(prompt("jusqu'a quelle table de multiplication"));
+const nbValueUser = parseInt(prompt("le nombre d'itération"));
+
+if (isNaN(inputUser) || isNaN(nbValueUser)){
+    console.log("Pas un nombre");
+} else {
+    console.log(`Voici les ${nbValueUser} premières valeurs des tables de multiplication allant jusqu'a ${inputUser}`);
+    for (let n = 1; n <= inputUser; n++){
+        for (let i = 1; i <= nbValueUser; i++){
+            console.log(n * i);
+        }
+    }
+}

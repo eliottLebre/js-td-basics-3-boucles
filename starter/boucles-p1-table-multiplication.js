@@ -15,6 +15,29 @@ N.B. Faites-le de deux manières différentes :
 // Commencez par demander à l'utilisateur la table de multiplication souhaitée et le nombre de valeurs à afficher
 // Ensuite, utilisez une boucle FOR pour calculer et afficher les x premières valeurs de la table de multiplication
 
+const inputUser = parseInt(prompt("votre table de multiplication"));
+const nbValueUser = parseInt(prompt("le nombre d'itération"));
+let x = 1;
+
+if (isNaN(inputUser) || isNaN(nbValueUser)){
+    console.log("Pas un nombre");
+} else {
+    console.log(`Voici les ${nbValueUser} premières valeurs de la table de multiplication par ${inputUser}`);
+    for (let i = 1; i <= nbValueUser; i++){
+        console.log(inputUser * i);
+    }
+
+}
+
 // avec WHILE
 // Répétez le même processus avec une boucle WHILE, en demandant à nouveau la table de multiplication et le nombre de valeurs
 
+if (isNaN(inputUser) || isNaN(nbValueUser)){
+    console.log("Pas un nombre");
+} else {
+    console.log(`Voici les ${nbValueUser} premières valeurs de la table de multiplication par ${inputUser}`);
+    while (x <= nbValueUser){
+        console.log(inputUser * x);
+        x++
+    }
+}
